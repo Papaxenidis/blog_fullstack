@@ -1,0 +1,41 @@
+<%- include("partials/header.ejs") %>
+
+
+<header class="text-bg-dark">
+   
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 text-white">Create</a></li>
+          <li><a href="/view" class="nav-link px-2 text-white">View</a></li>
+          <li><a href="/update" class="nav-link px-2 text-white">Update</a></li>
+          <li><a href="/delete" class="nav-link px-2 text-white";>Delete</a></li>
+         
+        </ul>
+
+       
+  </header>
+
+    <body>
+        
+		
+
+        <form action="/create" method="POST">
+
+        <div style="margin-top: 20px;">
+            <textarea style="width: 400px;height: 40px;" action = "POST" name = "titletext" cols="1" rows="1"></textarea>
+        </div>
+
+
+        <div style="margin-top: 20px;">
+            <textarea name="maintext"  id="" cols="100" rows="50"></textarea>
+        </div>
+            <button class="button-64" role="button" method="POST"><span class="text">Create Post</span></button>
+        </form>
+        
+
+     
+		<script src="/script/main_code.js"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,62 @@
+<%- include("partials/header.ejs") %>
+
+
+<header class="text-bg-dark">
+   
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 text-white">Create</a></li>
+            <li><a href="/view" class="nav-link px-2 text-white">View</a></li>
+          <li><a href="/update" class="nav-link px-2 text-white">Update</a></li>
+          <li><a href="/delete" class="nav-link px-2 text-white";>Delete</a></li>
+        </ul>
+
+       
+  </header>
+
+    <body onload="val()">
+      
+    
+
+
+                <div style="display: flex;">
+                  <div class="form-floating" style="width: 200px;margin-top: 20px;" >
+                    <select  onchange="val()" onload="val()" style="font-size: 30px;padding: 10px;" class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  
+                      <%var x = [];  %>
+                      <% var x2 =""; %>
+                    
+
+                      <%locals.pinakas.forEach((stoixeio)=> { %>
+                            
+                        <option style="display: flex; max-width: 100%;" id="opt" value="1" > <% x = stoixeio.split(/[&]/); 
+                        
+                          x2 = stoixeio; %>
+
+                        <%= x[0]+" * "+x[1] %>
+                        
+                        </option>
+                    
+                    <%}) %>
+                    </select>
+                  </div>
+
+                 
+        
+
+                     <div style="margin-top: 20px;margin-left: 200px;">
+                      <textarea  id="area1" readonly style="width: 400px;height: 40px;margin-bottom: 30px;border-radius: 2%;"></textarea>
+
+                      <textarea id="area2" readonly style="width: 800px;height: 600px;border-radius: 2%;"> </textarea>
+                    </div>
+                  </div> 
+
+                 
+
+
+
+		<script src="/script/main_code.js"></script>
+
+	</body>
+</html>
+

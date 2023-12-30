@@ -1,0 +1,80 @@
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: rgb(8, 12, 48);
+  font: normal 1.3rem sans-serif;
+  padding: 4rem;
+}
+
+textarea {
+  background-image: linear-gradient(#dfd2d2 50%, #F9F9F9 50%);
+  background-size: 100% 4rem;
+  border: 1px solid #CCC;
+  width: 100%;
+  height: 400px;
+  line-height: 2rem;
+  margin: 0 auto;
+  padding: 4px 8px;
+}
+
+ul>li{
+
+  color:white;
+
+}
+
+
+/* Butoon */
+.button-64 {
+  margin-top: 20px;
+  background-image: linear-gradient(144deg,#AF40FF, rgb(0, 0, 0) 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(10, 6, 41);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
